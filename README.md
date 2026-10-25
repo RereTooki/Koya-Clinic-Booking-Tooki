@@ -23,6 +23,7 @@ A checkpoint-friendly starter repository for implementing Koya Cohort 4 Task 1. 
 
 - `AGENTS.md` — persistent coding constraints
 - `PROMPT_FOR_CODEX.md` — the complete implementation prompt
+- `RESUME_PROMPT.md` — a short continuation prompt to paste after a limit/context reset
 - `docs/CONTRACT.md` — endpoint contract and edge cases from the assessment
 - `CHECKLIST.md` — live five-level progress checklist
 - `STATE.md` — precise resume point for the next Codex session

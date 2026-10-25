@@ -1,0 +1,3 @@
+# Resume Codex after a limit or context reset
+
+Read `AGENTS.md`, `PROMPT_FOR_CODEX.md`, `CHECKLIST.md`, `STATE.md`, and `IMPLEMENTATION_LOG.md` first. Inspect `git status` and the current code before editing. Resume from the first incomplete checklist item and trust completed work only after checking the recorded test results. Do not redo verified phases. Make the next smallest safe implementation step, run its relevant checks, then update `CHECKLIST.md`, `STATE.md`, and append a concise entry to `IMPLEMENTATION_LOG.md` with actual outcomes. Continue while practical. Do not deploy, create a GitHub remote, or push code.
