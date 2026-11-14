@@ -16,7 +16,7 @@ function apiKey(): string | null {
 
 async function callApi<T>(path: string, init?: RequestInit): Promise<ActionResult<T>> {
   const key = apiKey();
-  if (!key) return { ok: false, error: "Clinic service is not configured." };
+  if (!key) return { ok: false, error: "The booking service is not configured." };
 
   try {
     const response = await fetch(`${baseUrl()}${path}`, {
@@ -27,11 +27,11 @@ async function callApi<T>(path: string, init?: RequestInit): Promise<ActionResul
     const body: unknown = await response.json();
     if (!response.ok) {
       const message = body && typeof body === "object" && "error" in body ? (body as { error?: unknown }).error : undefined;
-      return { ok: false, error: typeof message === "string" ? message : "The clinic service could not complete that request." };
+      return { ok: false, error: typeof message === "string" ? message : "We could not complete that request." };
     }
     return { ok: true, data: body as T };
   } catch {
-    return { ok: false, error: "The clinic service is unavailable. Please try again." };
+    return { ok: false, error: "The booking service is unavailable. Please try again." };
   }
 }
 

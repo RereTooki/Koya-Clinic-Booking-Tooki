@@ -3,7 +3,7 @@ import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: "Koya Care | Book an appointment",
-  description: "A focused clinic appointment booking experience.",
+  description: "Book and manage Koya Care appointments online.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
