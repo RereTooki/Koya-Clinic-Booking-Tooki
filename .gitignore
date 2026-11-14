@@ -30,3 +30,5 @@ pnpm-debug.log*
 !.vscode/extensions.json
 .idea/
 .neon
+
+.vercel
